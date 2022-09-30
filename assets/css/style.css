@@ -1,0 +1,181 @@
+/* FONT JOSEFIN */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  /* background-color: rgb(50,60,70); */
+}
+/* NAV BAR */
+li,
+a,
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 11%;
+  background: rgb(15, 25, 35);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%),
+    0 2px 4px -1px rgb(0 0 0 / 20%);
+  z-index: 5;
+}
+.logo {
+  cursor: pointer;
+  width: 230px;
+}
+.nav_links {
+  list-style: none;
+  background-color: rgb(15, 25, 35);
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 13px;
+}
+.nav_links li a {
+  color: aliceblue;
+  transition: all 0.1s ease 0s;
+}
+.nav_links li a:hover {
+  color: rgb(229, 199, 0);
+}
+
+/* OVERLAY */
+
+.overlay-img {
+  opacity: 0.5;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.info {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  z-index: 3;
+}
+/* FORM INPUT */
+
+.form input {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(149, 149, 149);
+  border-radius: 30px;
+  font-size: 18px;
+}
+.form {
+  margin: 10px 10%;
+  background-color: aliceblue;
+  padding: 30px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%),
+    0 2px 4px -1px rgb(0 0 0 / 20%);
+}
+.form h2 {
+  display: flex;
+  justify-content: center;
+  text-shadow: 0px 0px 0.8px #000000;
+}
+.form button {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: darkgoldenrod;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+  text-shadow: 0px 0px 0.5px #000000;
+}
+.form button:hover {
+  color: rgb(255, 221, 0);
+  box-shadow: -1px 2px 20px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 20px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 20px -4px rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 3px #000000;
+}
+.form input {
+  text-shadow: 0.5px 0.5px 0px #000000;
+}
+
+/* FORM TEXT */
+
+.info-text h1 {
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 0.8px #000000;
+}
+.info-text p {
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.8;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-shadow: 1px 1px 3px #ffffff, 0px 0px 1px #000000;
+}
+
+/* HEADING CARDS */
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  text-shadow: 0px 0px 1px #000000;
+}
+.card {
+  width: 24%;
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: inline-block;
+}
+
+/* FOOTER BOTTOM */
+
+footer {
+  background-color: rgb(15, 25, 35);
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+  position: relative;
+}
+footer ul {
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+}
+footer li {
+  padding: 10px;
+}
+footer li a {
+  color: aliceblue;
+  transition: all 0.2s ease 0s;
+}
+footer li a:hover {
+  color: rgb(255, 251, 0);
+}
+section{
+  display: flex;
+  justify-content: center;
+}
