@@ -408,3 +408,66 @@ section {
   color: rgb(236, 240, 241);
   background: rgb(44, 62, 80);
 }
+
+.bars{
+  width: 50px;
+  
+}
+.navDiv{
+  list-style: none;
+  
+}
+.navDiv a{
+  color: #fff;
+}
+
+.mobile{
+  visibility: hidden;
+  margin-right: 30px;
+}
+/* .navDiv{
+  display: none;
+} */
+
+.navDivDisplay {
+  display: none;
+  
+}
+.navDivDisplay.visible {
+  display: block;
+}
+
+@media screen and (max-width:850px){
+.navDiv{
+ /* display: flex; */
+ justify-content: space-around;
+
+ align-items: center;
+}
+.navDiv li{
+  margin: 5px;
+}
+.mobile{
+  visibility: visible;
+}
+.nav_links{
+  visibility: hidden;
+}
+.sm{
+  visibility: hidden;
+}
+.bars{
+  visibility: none;
+}
+.search-btn{
+  visibility: none;
+}
+.form{
+  visibility: hidden;
+}.logo{
+    visibility: hidden;
+  }
+}
+@media screen and (max-width:600px){
+  
+}

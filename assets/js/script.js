@@ -52,3 +52,36 @@ form2.addEventListener("submit", (z) => {
     message2.textContent = "Yanlish!";
   }
 });
+function toggle() {
+  const sidebar = document.getElementById("navDivDisplay");
+  const visibleClassName = 'visible';
+
+  if (sidebar.classList.contains(visibleClassName)) {
+    sidebar.classList.remove(visibleClassName);
+  } else {
+    sidebar.classList.add(visibleClassName);
+  }
+}
+// const z=68;
+
+// if(z>=90){
+//   console.log('A');
+// }
+// else if(z>=80){
+//   console.log('B');
+// }
+// else if(z>=70){
+//   console.log('C');
+// }
+// else if(z>=60){
+//   console.log('D');
+// }
+// else{
+//   console.log('failed')
+// }
+
+// const a=['23','12','15','16','4','20','60','9','22','60'];
+
+// if(a/3){
+//   t
+// }
