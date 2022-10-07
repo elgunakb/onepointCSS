@@ -13,30 +13,44 @@
 </head>
 
 <body>
-
-    <!-- Header -->
+    <!--   HEADER  -->
 
     <header>
-        <img class="logo" src="https://www.onepoint.az/wp-content/themes/onepoint/branding/OnePoint_Logo_Full_Dark.png" alt="logo">
+        <img class="logo" src="https://www.onepoint.az/wp-content/themes/onepoint/branding/OnePoint_Logo_Full_Dark.png"
+            alt="logo">
         <nav>
             <ul class="nav_links">
                 <li><a href="#">Haqqımızda</a></li>
-                <li><a href="#">Üstünlüklər</a></li>
+                <li><a href="#container">Üstünlüklər</a></li>
                 <li><a href="#">Necə işləyirik</a></li>
                 <li><a href="#">Partnyorlar</a></li>
-                <li><a href="#">Daxil ol</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Daxil ol</a>
+                    <div class="dropdown-content">
+                        <a class="a2" href="#">Mövcud hesab</a>
+                        <a class="a1" href="#">Yeni hesab</a>
+                        <a href="#">Ziyarətci</a>
+                    </div>
+                </li>
             </ul>
+            <!-- <label id="icon">
+                <i style="color: aliceblue;" class="fa-solid fa-bars"></i>
+            </label> -->
         </nav>
+        <!-- SOCIAL MEDIA  -->
         <div class="sm">
-            <a class="cta" href="#"><img style="width: 50px;"
-                    src="./assets/img/Instagram Logo PNG Transparent & SVG Vector - Freebie Supply.png" alt="."></a>
-            <a class="cta" href="#"><img style="width: 28px;margin-bottom: 4px;margin-right: 3px;"
-                    src="assets/img/cdnlogo.com_twitter-icon.svg" alt="."></a>
-            <a class="cta" href="#"><img style="width: 33px;margin-bottom: 2px;margin-left: 2px;"
-                    src="./assets/img/clipart1347619.png" alt="."></a>
+            <a class="cta" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="cta" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="cta" href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
-
+        <!-- SEARCH -->
+        <div class="search-box">
+            <a class="search-btn" href="#"></a>
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <input class="search-txt" type="text" placeholder="Axtar">
+        </div>
     </header>
+    <!-- HEADER END -->
 
     <!-- OVERLAY -->
 
@@ -52,7 +66,7 @@
                 <input type="text" placeholder="Əlaqədar şəxs *">
                 <input type="text" placeholder="Əlaqə nömrəsi *">
                 <input type="email" placeholder="E-mail">
-                <button>MÜRACİƏT</button>
+                <button id="muraciet">MÜRACİƏT</button>
             </div>
             <div class="info-text">
                 <h1>Onlayn kredit</h1>
@@ -63,11 +77,12 @@
             </div>
         </div>
     </div>
+    <!-- OVERLAY END -->
 
     <!-- CONTAINER -->
 
-    <div class="container">
-        <div class="heading">
+    <div id="container">
+        <div id="heading">
             <h1>
                 Üstünlüklərimiz
             </h1>
@@ -94,7 +109,7 @@
         </div>
 
         <!-- FOOTER BOTTOM -->
-        
+
         <footer>
             <ul>
                 <li><a href="#">Haqqımızda</a></li>
@@ -103,12 +118,68 @@
                 <li><a href="#">Partnyorlar</a></li>
                 <li><a href="#">Daxil ol</a></li>
             </ul>
+            <div class="copy">
+                &copy;<p>2022, Inc. All rights reserved.
+
+                </p>
+
+            </div>
         </footer>
-        
-        
+        <!-- FOOTER BOTTOM END-->
+        <div class="main-popup">
+            <div class="popup">
+                <div class="popup-close">
+                    x
+                </div>
+                <form class="popup-content">
+                    <h3>SIGN UP</h3>
+                    <input required style="margin-top: 10px;" type="text" name="username" id="username"
+                        placeholder="USERNAME" oninvalid="this.setCustomValidity('Username daxil edin!')"
+                        oninput="setCustomValidity('')">
+                    <input required style="margin-top: 10px; " type="password" name="password" id="password"
+                        placeholder="PASSWORD" oninvalid="this.setCustomValidity('Parol daxil edin!')"
+                        oninput="setCustomValidity('')">
+                    <div class="message">
+                    </div>
+                    <input style=" margin-top: 10px; background-color: #2c3e50; cursor: pointer;" type="submit"
+                        name="send" id="send">
+                </form>
+
+            </div>
+        </div>
+        <div class="main-reg">
+            <div class="reg">
+                <div class="reg-close">
+                    x
+                </div>
+                <form class="reg-content">
+                    <h3>
+                        REGISTER
+                    </h3>
+                    <input required="" id="username2" type="text" placeholder="Username *"
+                        oninvalid="this.setCustomValidity('Username daxil edin!')" oninput="setCustomValidity('')">
+                    <input required id="fullname" type="text" placeholder="Fullname *"
+                        oninvalid="this.setCustomValidity('Ad Və Soyadı daxil edin!')"
+                        oninvalid="this.setCustomValidity('Adınızı daxil edin!')" oninput="setCustomValidity('')">
+                    <input required id="email" type="email" placeholder="Email *"
+                        oninvalid="this.setCustomValidity('Email daxil edin!')" oninput="setCustomValidity('')">
+                    <input required type="password" placeholder="Password *"
+                        oninvalid="this.setCustomValidity('Parol daxil edin!')" oninput="setCustomValidity('')">
+                    <input required type="password" placeholder="Password *"
+                        oninvalid="this.setCustomValidity('Parol daxil edin!')" oninput="setCustomValidity('')">
+                    <div class="message2">
+                    </div>
+                    <input style="cursor: pointer;" type="submit">
+                </form>
+            </div>
+        </div>
 
         <!-- SCRIPT JS -->
         <script src="assets/js/script.js"></script>
+
+        <!-- ICON SCRIPT -->
+
+        <script src="https://kit.fontawesome.com/46148313b8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
